@@ -10,7 +10,6 @@ import com.mycompany.classes.Eleitor;
 import com.mycompany.classes.Entrevista;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 /**
  *
  * @author aluno
@@ -38,7 +37,7 @@ public class Exercicio2 {
         listaDosEntrevistados.add(eleitor4);
         listaDosEntrevistados.add(eleitor5);
         
-        Entrevista entrevista = new Entrevista(listaDosEntrevistados, 5);
+        Entrevista entrevista = new Entrevista(listaDosEntrevistados);
         
         System.out.println("O número total de entrevistados é: " + entrevista.getQtdEntrevistados());
         System.out.println("Para cada candidato a intenção de voto é:");

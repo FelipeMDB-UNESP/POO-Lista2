@@ -17,9 +17,9 @@ public class Entrevista {
     private List<Eleitor> eleitores;
     private int qtdEntrevistados;
     
-    public Entrevista(List<Eleitor> eleitores, int qtdEntrevistados) {
+    public Entrevista(List<Eleitor> eleitores) {
         this.eleitores = eleitores;
-        this.qtdEntrevistados = qtdEntrevistados;
+        this.qtdEntrevistados = eleitores.size();
     }
     
     public List<Eleitor> filtrarEntrevistados(String estadoCivil, double rendaMensalBrutaMaxima){
@@ -47,10 +47,6 @@ public class Entrevista {
 
     public int getQtdEntrevistados() {
         return qtdEntrevistados;
-    }
-
-    public void setQtdEntrevistados(int qtdEntrevistados) {
-        this.qtdEntrevistados = qtdEntrevistados;
     }
         
 }
